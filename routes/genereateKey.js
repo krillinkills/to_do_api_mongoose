@@ -13,12 +13,11 @@ const nodemailer = require('nodemailer');
 const { google } = require('googleapis');
 const { v4: uuidv4 } = require('uuid');
 
-const ClientId =
-  '61540748761-foabeoqo9iuq0fojqt7va9le0vgmusn7.apps.googleusercontent.com';
-const Clientsecret = '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';
-const RedirectUri = 'https://developers.google.com//oauthplayground';
-const RefreshToken =
-  '1//04a1tjRQk0BSYCgYIARAAGAQSNwF-L9Irt5XVeyquOtt3mW55Hhlq-mUMcS34tVUtHMNBbBRrHLiv2ahBI3JTeZND6nsDXGVSsik';
+//All these ids you cand find in google cloud
+const ClientId = 'x.apps.googleusercontent.com';
+const Clientsecret = 'x';
+const RedirectUri = 'x';
+const RefreshToken = 'x';
 
 const oAuth2Client = new google.auth.OAuth2(
   ClientId,

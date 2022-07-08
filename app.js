@@ -19,6 +19,7 @@ const update = require('./routes/updatetodo');
 const deletetodo = require('./routes/deleteTodo');
 const gettodo = require('./routes/gettodo');
 const generateKey = require('./routes/genereateKey');
+const recover = require('./routes/recoverTodo');
 
 //Route middle
 app.use('/register', sendMail);
@@ -27,5 +28,6 @@ app.use('/', update);
 app.use('/', deletetodo);
 app.use('/', gettodo);
 app.use('/', generateKey);
+app.use('/recover', recover);
 
 app.listen(4000, () => console.log('connect'));
